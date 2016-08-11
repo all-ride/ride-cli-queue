@@ -1,0 +1,20 @@
+{
+    "name": "ride/cli-queue",
+    "description": "Queue commands for the Ride CLI",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Joris Vandeweerd",
+            "email": "joris@statik.be"
+        }
+    ],
+    "require": {
+        "ride/cli": ">=0.6.0",
+        "ride/lib-queue": ">=0.1.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "ride\\cli\\command\\queue\\": ["src/"]
+        }
+    }
+}

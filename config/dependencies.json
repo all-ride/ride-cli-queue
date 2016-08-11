@@ -1,0 +1,30 @@
+{
+    "dependencies": [
+        {
+            "interfaces": "ride\\library\\queue\\worker\\QueueWorker",
+            "class": "ride\\library\\queue\\worker\\GenericQueueWorker",
+            "id": "generic"
+        },
+        {
+            "interfaces": "ride\\library\\queue\\dispatcher\\QueueDispatcher",
+            "class": "ride\\library\\queue\\dispatcher\\SingleQueueDispatcher",
+            "id": "single",
+            "calls": [
+                {
+                    "method": "__construct",
+                    "arguments": [
+                        {
+                            "name": "queue",
+                            "type": "parameter",
+                            "properties": {
+                                "key": "system.queue",
+                                "default": "default"
+                            }
+                        }
+                    ]
+                },
+                "setQueueManager"
+            ]
+        }
+    ]
+}
