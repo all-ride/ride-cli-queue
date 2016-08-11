@@ -1,0 +1,14 @@
+{
+    "commands": [
+        {
+            "name": "queue status",
+            "aliases": "qs",
+            "class": "ride\\cli\\command\\queue\\QueueStatusCommand"
+        },
+        {
+            "name": "queue worker",
+            "aliases": "qw",
+            "class": "ride\\cli\\command\\queue\\QueueWorkerCommand"
+        }
+    ]
+}
