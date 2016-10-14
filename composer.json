@@ -9,8 +9,9 @@
         }
     ],
     "require": {
-        "ride/cli": ">=0.6.0",
-        "ride/lib-queue": ">=0.1.0"
+        "ride/app": "^1.0.0",
+        "ride/cli": "^1.0.0",
+        "ride/lib-queue": "^1.0.0"
     },
     "autoload": {
         "psr-0": {
