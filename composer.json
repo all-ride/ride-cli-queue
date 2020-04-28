@@ -11,7 +11,7 @@
     "require": {
         "ride/app": "^1.0.0",
         "ride/cli": "^1.0.0",
-        "ride/lib-queue": "^1.0.0"
+        "ride/lib-queue": "^1.2.0"
     },
     "autoload": {
         "psr-0": {
