@@ -3,7 +3,21 @@
         {
             "interfaces": "ride\\library\\queue\\worker\\QueueWorker",
             "class": "ride\\library\\queue\\worker\\GenericQueueWorker",
-            "id": "generic"
+            "id": "generic",
+            "calls": [
+                {
+                    "method": "__construct",
+                    "arguments": [
+                        {
+                            "name": "log",
+                            "type": "dependency",
+                            "properties": {
+                                "interface": "ride\\library\\log\\Log"
+                            }
+                        }
+                    ]
+                }
+            ]
         },
         {
             "interfaces": "ride\\library\\queue\\dispatcher\\QueueDispatcher",
